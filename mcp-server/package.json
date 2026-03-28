@@ -1,0 +1,20 @@
+{
+  "name": "napkin-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server wrapping the napkin CLI for Claude Code integration",
+  "type": "module",
+  "bin": {
+    "napkin-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}
